@@ -137,6 +137,7 @@ function colorDecorations(view: EditorView) {
         ) {
           const [color, alpha] = toFullHex(callExp);
           console.log(color);
+          // FIXME: YAML対応なのでCSSとの互換性がなくなる
           const colorRaw = callExp.startsWith("'#")
             ? callExp.slice(1, -1)
             : callExp;
@@ -300,6 +301,10 @@ export const colorView = (showPicker: boolean = true) =>
                 data.alpha ? " / " + data.alpha : ""
               })`;
             }
+          }
+          // FIXMI: YAML対応なのでCSSで壊れる
+          if (converted.startsWith("#")) {
+            converted = converted.replace("#", "'#") + "'";
           }
           view.dispatch({
             changes: {
