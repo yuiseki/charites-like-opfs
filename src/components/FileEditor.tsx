@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useCallback, useEffect, useState } from "react";
 import CodeMirror from "@uiw/react-codemirror";
-import { colorView, colorTheme } from "@uiw/codemirror-extensions-color";
+import { color } from "@uiw/codemirror-extensions-color";
 import { darcula } from "@uiw/codemirror-theme-darcula";
 import { yaml } from "@codemirror/lang-yaml";
 import { useKeyBind } from "../hooks/keybind";
@@ -488,7 +488,7 @@ export const FileEditor: React.FC = () => {
             <CodeMirror
               value={content}
               theme={darcula}
-              extensions={[yaml(), colorView(true), colorTheme]}
+              extensions={[yaml(), color]}
               onChange={(value) => setContent(value)}
               height="80vh"
               width="600px"
