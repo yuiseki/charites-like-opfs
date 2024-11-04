@@ -486,10 +486,9 @@ export const FileEditor: React.FC = () => {
             }}
           >
             <CodeMirror
-              //value={content}
-              value="body { color: #333; }"
+              value={content}
               theme={darcula}
-              extensions={[colorView(true), colorTheme]}
+              extensions={[yaml(), colorView(true), colorTheme]}
               onChange={(value) => setContent(value)}
               height="80vh"
               width="600px"
