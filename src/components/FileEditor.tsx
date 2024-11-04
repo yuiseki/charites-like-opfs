@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useCallback, useEffect, useState } from "react";
 import CodeMirror from "@uiw/react-codemirror";
-import { color } from "@uiw/codemirror-extensions-color";
+import { color } from "../lib/react-codemirror/extensions/color-yaml/index.ts";
 import { darcula } from "@uiw/codemirror-theme-darcula";
 import { yaml } from "@codemirror/lang-yaml";
 import { useKeyBind } from "../hooks/keybind";
