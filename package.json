@@ -14,6 +14,7 @@
     "@codemirror/lang-yaml": "^6.1.1",
     "@uiw/codemirror-extensions-color": "^4.23.6",
     "@uiw/codemirror-theme-darcula": "^4.23.6",
+    "@uiw/codemirror-theme-vscode": "^4.23.6",
     "@uiw/react-codemirror": "^4.23.6",
     "maplibre-gl": "^4.7.1",
     "react": "^18.3.1",

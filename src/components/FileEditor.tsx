@@ -2,7 +2,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { color } from "../lib/react-codemirror/extensions/color-yaml/index.ts";
-import { darcula } from "@uiw/codemirror-theme-darcula";
+import { vscodeDark } from "@uiw/codemirror-theme-vscode";
 import { yaml } from "@codemirror/lang-yaml";
 import { useKeyBind } from "../hooks/keybind";
 import { parseYamlWithIncludes } from "../utils/parseYaml";
@@ -487,7 +487,7 @@ export const FileEditor: React.FC = () => {
           >
             <CodeMirror
               value={content}
-              theme={darcula}
+              theme={vscodeDark}
               extensions={[yaml(), color]}
               onChange={(value) => setContent(value)}
               height="80vh"
