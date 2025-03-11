@@ -6,7 +6,7 @@
   "packageRules": [
     {
       "groupName": "codemirror",
-      "matchPackageNames": ["@uiw/codemirror-extensions-color", "@uiw/codemirror-theme-vscode", "@uiw/react-codemirror"],
+      "matchPackageNames": ["@uiw/codemirror-extensions-color", "@uiw/codemirror-theme-vscode", "@uiw/codemirror-theme-darcula", "@uiw/react-codemirror"],
       "matchPackagePrefixes": ["@codemirror/"]
     }
   ]
